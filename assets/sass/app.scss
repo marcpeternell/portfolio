@@ -1,0 +1,39 @@
+@import "./variables";
+@import "~animate.css";
+@import "~hamburgers/_sass/hamburgers/hamburgers";
+
+//custom scss
+@import "./headline";
+
+.icon {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+}
+
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+}
+
+#nav {
+  padding: 30px;
+
+  a {
+    &.nuxt-link-exact-active {
+      font-weight: bold;
+      text-decoration: underline;
+    }
+  }
+}
+
+h2,
+.router-link {
+  &:after {
+    content: ".";
+  }
+}
+
